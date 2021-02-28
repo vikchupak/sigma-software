@@ -32,24 +32,6 @@ const TodosPage = () => {
     }
   };
 
-  // todos.find((todo) => todo._id === id).complete
-
-  // const todo = {
-  //   ...todos.find((todo) => todo._id === id),
-  //   ...todos.find((todo) => todo._id === id).complete = ,
-  // }
-
-  // const onMark = async(id) => {
-  //   try {
-  //     await request(`/todo/${id}`, "PUT", {}, {
-  //       Authorization: `Bearer ${token}`,
-  //     });
-  //     setTodos(todos.filter((todo) => todo._id !== id));
-  //   } catch (e) {
-  //     message(e.message);
-  //   }
-  // }
-
   useEffect(() => {
     fetchTodos();
   }, [fetchTodos]);

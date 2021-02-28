@@ -27,7 +27,6 @@ router.post(
       const todo = new Todo({
         title,
         content,
-        complete: false,
         owner: req.user.userId,
       });
 
