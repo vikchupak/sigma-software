@@ -7,8 +7,9 @@
     "start": "node app.js",
     "server": "nodemon app.js",
     "client": "npm run start --prefix client",
-    "client:install": "npm install --prefix client",
-    "client:build": "npm run build --prefix client",
+    "client-install": "npm install --prefix client",
+    "heroku-postbuild": "npm install client-install && npm run client-build",
+    "client-build": "npm run build --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "Viktor Chupak <vik.chupak@gmail.com>",
