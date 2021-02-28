@@ -1,0 +1,5 @@
+{
+    "port": 5000,
+    "jwtSecret": "client server app",
+    "mongoUri": "mongodb+srv://viktor:vikpassword@cluster0.xmgql.mongodb.net/clientServerApp?retryWrites=true&w=majority"
+}
